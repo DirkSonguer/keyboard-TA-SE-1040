@@ -23,6 +23,8 @@ Notably, the top left key on the "numpad" function cluster is a blank & doesn't 
 
 In total, the keyboard has 84 keys (83 + 1 blank).
 
+![alt text](https://github.com/DirkSonguer/keyboard-TA-SE-1040/blob/main/original-layout/triumph-adler-se-1040.png "TA SE 1040 Layout")
+
 ## Switches
 The switches are [Cherry M9](https://deskthority.net/wiki/Cherry_M9) with black stems. According to the Cherry catalog, these are the low profile linear variant - the main housing sits below the steel plate, with the top part clipping into the plate.
 
