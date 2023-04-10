@@ -19,9 +19,9 @@ More information on the TA SE 10xx series of typewriters:
 ## Layout
 Both my SE 1040's have a German ISO-DE layout with some additional modifyer keys to control typewriter functionalities like font settings and cursor control. It's similar to a 60% plus numpad plus 6 XT-style F-keys.
 
-Notably, the top left key on the "numpad" / right F cluster is a blank & doesn't have a switch underneath.
+Notably, the top left key on the "numpad" function cluster is a blank & doesn't have a switch underneath.
 
-In total, the keyboard has 84 keys.
+In total, the keyboard has 84 keys (83 + 1 blank).
 
 ## Switches
 The switches are [Cherry M9](https://deskthority.net/wiki/Cherry_M9) with black stems. According to the Cherry catalog, these are the low profile linear variant - the main housing sits below the steel plate, with the top part clipping into the plate.
@@ -39,6 +39,11 @@ The keyboard has black, low profile keycaps. They are 2mm thick and 8mm at their
 The display is a 40x1 character [Vacuum Fluorescent Display](https://en.wikipedia.org/wiki/Vacuum_fluorescent_display) (VFD), each charater with a 5x12 dot matrix, driven by 12 Texas Instruments UCN4810A VFD display driver chips.
 
 ![alt text](https://github.com/DirkSonguer/keyboard-TA-SE-1040/blob/main/images/TA-SE-1040-display.jpg "TA SE 1040 Display")
+
+## LEDs
+On the left is a column of function keys with corresponding LEDs: Typing mode, text alignment, font weight, line weight, font size and line height. The keys would swith through the options with the LEDs highlighting the currently selected one.
+
+In total, there are 22 LEDs in 6 groups. Each group is a separate module soldered to the PCB.
 
 # Rebuild
 
