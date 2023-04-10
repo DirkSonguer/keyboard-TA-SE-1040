@@ -12,25 +12,25 @@ More information on the TA SE 10xx series of typewriters:
 
 # Keyboard documentation
 
-![alt text](https://github.com/DirkSonguer/keyboard-TA-SE-1040/blob/master/images/TA-SE-1040-front.jpg "TA SE 1040 Front")
+![alt text](https://github.com/DirkSonguer/keyboard-TA-SE-1040/blob/main/images/TA-SE-1040-front.jpg "TA SE 1040 Front")
 
-![alt text](https://github.com/DirkSonguer/keyboard-TA-SE-1040/blob/master/images/TA-SE-1040-back.jpg "TA SE 1040 Back")
+![alt text](https://github.com/DirkSonguer/keyboard-TA-SE-1040/blob/main/images/TA-SE-1040-back.jpg "TA SE 1040 Back")
 
 ## Switches
 The switches seem to be [Cherry M9](https://deskthority.net/wiki/Cherry_M9) with black stems. According to the Cherry catalog, these are the low profile variant and in this board sit below the steel plate with only the top and stem above.
 
 Both boards however also had switches with clear stems. Based on their slightly wonkier soldering my guess is that the clear ones were replacements / repairs at some point.
 
-![alt text](https://github.com/DirkSonguer/keyboard-TA-SE-1040/blob/master/images/TA-SE-1040-switches.jpg "TA SE 1040 Switches")
+![alt text](https://github.com/DirkSonguer/keyboard-TA-SE-1040/blob/main/images/TA-SE-1040-switches.jpg "TA SE 1040 Switches")
 
 ## Keycaps
 
-![alt text](https://github.com/DirkSonguer/keyboard-TA-SE-1040/blob/master/images/TA-SE-1040-keycaps.jpg "TA SE 1040 Keycaps")
+![alt text](https://github.com/DirkSonguer/keyboard-TA-SE-1040/blob/main/images/TA-SE-1040-keycaps.jpg "TA SE 1040 Keycaps")
 
 ## Display
 The display is a 40x1 character [Vacuum Fluorescent Display](https://en.wikipedia.org/wiki/Vacuum_fluorescent_display) (VFD), each charater with a 5x12 dot matrix, driven by 12 Texas Instruments UCN4810A VFD display driver chips.
 
-![alt text](https://github.com/DirkSonguer/keyboard-TA-SE-1040/blob/master/images/TA-SE-1040-display.jpg "TA SE 1040 Display")
+![alt text](https://github.com/DirkSonguer/keyboard-TA-SE-1040/blob/main/images/TA-SE-1040-display.jpg "TA SE 1040 Display")
 
 # Rebuild
 
