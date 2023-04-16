@@ -16,19 +16,28 @@ More information on the TA SE 10xx series of typewriters:
 
 ![alt text](https://github.com/DirkSonguer/keyboard-TA-SE-1040/blob/main/images/TA-SE-1040-back.jpg "TA SE 1040 Back")
 
-## Layout
-Both my SE 1040's have a German ISO-DE layout with some additional modifyer keys to control typewriter functionalities like font settings and cursor control. It's similar to a 60% plus numpad plus 6 XT-style F-keys.
+## PCBs
+The two boards seem to be two different editions. While not different from the outside, the PCBs (and switches, see below) do differ.
+* The first board is labelled "Assembly Group EDCA01" ("Baugruppe" in German)
+* The second board is labelled "Assembly Group EDCA03"
 
-Notably, the top left key on the "numpad" function cluster is a blank & doesn't have a switch underneath.
+I assume this denominates generations, however neither board shows any kind of manufacturing date reference.
+
+## Layout
+Both the SE 1040's have a German ISO-DE layout with some additional modifyer keys to control typewriter functionalities like font settings and cursor control. It's similar to a 60% plus numpad plus 6 XT-style F-keys.
+
+Notably, on the first board the top left key on the "numpad" function cluster is a blank & doesn't have a switch underneath. The second board has a working switch there, with an "E-mail" icon on the respective keycap.
 
 In total, the keyboard has 84 keys (83 + 1 blank).
 
 ![alt text](https://github.com/DirkSonguer/keyboard-TA-SE-1040/blob/main/original-layout/triumph-adler-se-1040.png "TA SE 1040 Layout")
 
 ## Switches
-The switches are [Cherry M9](https://deskthority.net/wiki/Cherry_M9) with black stems. According to the Cherry catalog, these are the low profile linear variant - the main housing sits below the steel plate, with the top part clipping into the plate.
+The switches are [Cherry M9](https://deskthority.net/wiki/Cherry_M9). According to the Cherry catalog, these are the low profile linear variant - the main housing sits below the steel plate, with the top part clipping into the plate.
 
-Both boards also have switches with clear stems, some of which seem to have different springs / actuation force. Based on their slightly wonkier soldering my guess is that these were replacements / repairs at some point.
+The switches in the first board are M9 blacks (see pictures). The board also has two M9 clear switches. Based on their slightly wonkier soldering my guess is that these were replacements / repairs at some point.
+
+The second board features only M9 clears, in line with the replacement switches from the first board. 
 
 ![alt text](https://github.com/DirkSonguer/keyboard-TA-SE-1040/blob/main/images/TA-SE-1040-switches.jpg "TA SE 1040 Switches")
 
@@ -48,6 +57,11 @@ On the left is a column of function keys with corresponding LEDs: Typing mode, t
 In total, there are 22 LEDs in 6 groups. Each group is a separate module soldered to the PCB.
 
 # Rebuild
+Rebuilding the keyboard poses an interesting dilemma:
+1. Try to get the keyboard running again with as many original parts as possible
+2. Reconstruct the keyboard with modern parts, only keeping the exterior original
+
+
 
 ## Layout
 
