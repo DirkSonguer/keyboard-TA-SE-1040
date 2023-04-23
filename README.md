@@ -1,7 +1,7 @@
 # Triumph Adler SE 1040 Rebuild
-The Triumph Adler SE 1040 was a typewriter setup from the mid to late 1980s, consisting of an external keyboard & control unit and a daisy wheel printer unit.
+The Triumph Adler SE 1040 was a typewriter setup from the early to late 1980s, consisting of an external keyboard and a daisy wheel printer.
 
-While the printer unit is hard to come by in good shape these days, the keyboards turn up on Ebay from time to time and I managed to grab two for cheap. My initial idea was to re-use the keycaps, which are nice and thick, black, low profile double-shot ABS with MX compatible mount. But when the boards arrived I thought I might try and rebuild them in some way, either by trying some form of conversion (re-using some of the components), or completely replacing the interior with modern tech.
+While the printer unit is hard to come by in good shape these days, the keyboards turn up on Ebay from time to time and I managed to grab two for cheap. My initial idea was to only re-use the keycaps, which are nice and thick, black, low-profile double-shot ABS with MX compatible mounts. But when the boards arrived I really liked their look and decided to try to restore or rebuild them in some way.
 
 This repo documents my findings in case others want to mod their TA SE 1040s.
 
@@ -28,7 +28,7 @@ Both the SE 1040's have a German ISO-DE layout with some additional modifyer key
 
 Notably, on the first board the top left key on the "numpad" function cluster is a blank & doesn't have a switch underneath. The second board has a working switch there, with an "E-mail" icon on the respective keycap.
 
-In total, the keyboard has 84 keys (83 + 1 blank).
+In total, the keyboard has 84 keys.
 
 ![alt text](https://github.com/DirkSonguer/keyboard-TA-SE-1040/blob/main/original-layout/triumph-adler-se-1040.png "TA SE 1040 Layout")
 
@@ -42,9 +42,16 @@ The second board features only M9 clears, in line with the replacement switches 
 ![alt text](https://github.com/DirkSonguer/keyboard-TA-SE-1040/blob/main/images/TA-SE-1040-switches.jpg "TA SE 1040 Switches")
 
 ## Keycaps
-The keyboard has black, low profile keycaps. They are 2mm thick and 8mm at their highest point, with a width of 18mm (1u). The alphas have concave indents and are slightly angled, although every row features the same angle. The modifyers and relegendables have flat surfaces.
+The keyboard has black, low profile keycaps, made out of double-shot ABS. The lettering is middle-centered and quite large.
 
 ![alt text](https://github.com/DirkSonguer/keyboard-TA-SE-1040/blob/main/images/TA-SE-1040-keycaps.jpg "TA SE 1040 Keycaps")
+
+The alphas are uniform and have concave indents, however they are slightly angled. 1u is 17.7mm x 17.7mm. They are 7.4mm at their highest point (front-facing) and 6.3mm at their lowest (back-facing), making the angle about 4°.
+
+The modifyers and relegendables have flat surfaces without indents and have the same angle.
+
+![alt text](https://github.com/DirkSonguer/keyboard-TA-SE-1040/blob/main/images/TA-SE-1040-keycaps-details.jpg "TA SE 1040 Keycap Details")
+
 
 ## Display
 The display is a 40x1 character [Vacuum Fluorescent Display](https://en.wikipedia.org/wiki/Vacuum_fluorescent_display) (VFD), each charater with a 5x12 dot matrix, driven by 12 Texas Instruments UCN4810A VFD display driver chips.
@@ -57,14 +64,20 @@ On the left is a column of function keys with corresponding LEDs: Typing mode, t
 In total, there are 22 LEDs in 6 groups. Each group is a separate module soldered to the PCB.
 
 # Rebuild
-Rebuilding the keyboard poses an interesting dilemma:
-1. Try to get the keyboard running again with as many original parts as possible
-2. Reconstruct the keyboard with modern parts, only keeping the exterior original
+Rebuilding the keyboard poses an interesting dilemma: Either try some form of restoration (repair and re-use the original components) or by replacing the interior with modern tech
+1. Restorate the keyboard with as many original parts as possible
+2. Reconstruct the keyboard with modern parts, only keeping the exterior
 
+## Thoughts on restoration
+The original keyboard was connected to a daisy wheel printer unit that provided power and likely more functionality. Little documentation exists how the 104x units actually worked, so it would need to be a complete reverse engineering effort.
 
+The end state would be building a converter unit that would provide power as well as routes the input to a modern computer interface like USB.
+
+This assumes that the keyboards are still working, the reverse engineering goes well and it's actually desirable to type on the original switches. Especially the last part is debatable.
+
+## Thoughts on reconstruction
 
 ## Layout
-
 
 ## Display
 
@@ -73,8 +86,6 @@ https://www.hackster.io/macsboost/particle-weather-vfd-80fa78
 https://www.youtube.com/watch?v=JM_Iqasw9K4
 
 https://hackingmajenkoblog.wordpress.com/2017/12/23/vacuum-fluorescent-displays-on-arduino/
-
-
 
 ## Software used
 * KLE for creating the layout: http://www.keyboard-layout-editor.com/
