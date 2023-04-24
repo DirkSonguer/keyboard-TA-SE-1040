@@ -1,7 +1,14 @@
 # Triumph Adler SE 1040 Rebuild
-The Triumph Adler SE 1040 was a typewriter setup from the early to late 1980s, consisting of an external keyboard and a daisy wheel printer.
+The Triumph Adler SE 1040 was a typewriter setup from the early to late 1980s, consisting of an external keyboard and a daisy wheel printer plus optional internal and external storage.
 
-While the printer unit is hard to come by in good shape these days, the keyboards turn up on Ebay from time to time and I managed to grab two for cheap. My initial idea was to only re-use the keycaps, which are nice and thick, black, low-profile double-shot ABS with MX compatible mounts. But when the boards arrived I really liked their look and decided to try to restore or rebuild them in some way.
+![alt text](https://github.com/DirkSonguer/keyboard-TA-SE-1040/blob/main/images/TA-SE-1040-illustration.jpg "TA SE 1041 Illustration")
+
+The SE 1040 came in 3 editions:
+* SE 1040: Keyboard without internal memory expansion & no external storage
+* SE 1041: Keyboard with internal memory expansion & external 5.25 floppy disk drive
+* SE 1040 MD: Keyboard with internal memory expansion & external microdisk drive 
+
+All three would attach to the same daisy wheel printer. While the printer unit is hard to come by in good shape these days, the keyboards turn up on Ebay from time to time and I managed to grab two for cheap. My initial idea was to only re-use the keycaps, which are thick, black, low-profile double-shot ABS with MX compatible mounts. But when the boards arrived I really liked their look and decided to try to restore or rebuild them in some way.
 
 This repo documents my findings in case others want to mod their TA SE 1040s.
 
