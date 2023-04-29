@@ -98,18 +98,23 @@ The display is a 40x1 character [Vacuum Fluorescent Display](https://en.wikipedi
 ![alt text](https://github.com/DirkSonguer/keyboard-TA-SE-1040/blob/main/images/TA-SE-1040-display.jpg "TA SE 1040 Display")
 
 # Rebuild
-Rebuilding the keyboard poses an interesting dilemma: Either try some form of restoration (repair and re-use the original components) or by replacing the interior with modern tech
-1. Restorate the keyboard with as many original parts as possible
+Rebuilding the keyboard poses an interesting dilemma:
+1. Restore the keyboard, keeping as many original parts as possible
 2. Reconstruct the keyboard with modern parts, only keeping the exterior
 
-## Thoughts on restoration
-The original keyboard was connected to a daisy wheel printer unit that provided power and likely more functionality. Little documentation exists how the 104x units actually worked, so it would need to be a complete reverse engineering effort.
+## Thoughts on Restoration
+The original keyboard was connected to a daisy wheel printer unit that provided power and accepted character and command codes. A restoration effort would mean
+1. Making sure all internal components work as they should
+2. Build a converter box that would provide power as well as routes the keyboard input to a modern computer interface like USB
 
-The end state would be building a converter unit that would provide power as well as routes the input to a modern computer interface like USB.
+This assumes that the keyboards are still working and that it's actually desirable to type on the original switches. Especially the last part is debatable as the M9 switches are quite... [horrible](https://www.youtube.com/watch?v=OgUFYYTNaes).
 
-This assumes that the keyboards are still working, the reverse engineering goes well and it's actually desirable to type on the original switches. Especially the last part is debatable.
+In terms of restoring the keyboard, I recently got my hands on the original technical documentations for the SE 10-series as part of the estate of Gernot Haltenorth, a previous technical writer for Triumph Adler. So it would be theoretically possible to repair any issues with the boards, assuming you could still get the components (which you can't).
 
-## Thoughts on reconstruction
+All that makes a true restoration possible, but (at least for me) impractical.
+
+## Thoughts on Reconstruction
+Reconstruction would start with removing the original PCB. Since everything is on that PCB this equates to removing the entire interior of the keyboard. Step two would be creating a new PCB with modern hot-swap cherry MX sockets, new display and some equivalent functionality for the comfort keys & LEDs.
 
 ## Layout
 
