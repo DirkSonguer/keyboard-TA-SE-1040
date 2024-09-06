@@ -1,21 +1,36 @@
-# Triumph Adler SE 1040 Rebuild
-The Triumph Adler (TA) SE 1040 was a typewriter setup from the early to late 1980s, consisting of an external keyboard and a daisy wheel printer plus optional internal and external storage.
-
-![alt text](https://github.com/DirkSonguer/keyboard-TA-SE-1040/blob/main/images/TA-SE-1040-illustration.jpg "TA SE 1041 Illustration")
-
-The SE 1040 came in 3 editions:
-* SE 1040: Keyboard without internal memory expansion & no external storage
-* SE 1041: Keyboard with internal memory expansion & external 5.25 floppy disk drive
-* SE 1040 MD: Keyboard with internal memory expansion & external microdisk drive 
-
-All three would attach to the same daisy wheel printer. While the printer unit is hard to come by in good shape these days, the keyboards turn up on Ebay from time to time and I managed to grab two for cheap. My initial idea was to only re-use the keycaps, which are thick, black, low-profile double-shot ABS with MX compatible mounts. But then the boards arrived and I really liked their look.
+# Triumph-Adler SE 1040 Rebuild
+The Triumph-Adler (TA) SE 1040 was a typewriter setup from the early to late 1980s, consisting of an external keyboard and a daisy wheel printer plus optional internal and external storage. While the printer units are hard to come by in good shape these days, the keyboards turn up on Ebay from time to time and I managed to grab two for cheap. My initial idea was to only re-use the keycaps, which are thick, black, low-profile double-shot ABS with MX compatible mounts. But then the boards arrived and I really liked their look.
 
 I decided to try to restore or rebuild the keyboards in some way. This repo documents my findings in case others want to mod their TA SE 1040s.
 
+# What is this thing? And why does it exist?
+In the early 1980s, it was already becoming clear that these "Computer" things might be on to something. But they also represented a [disruptive innovation](https://publish.obsidian.md/dirksonguer/Types+of+Innovation): Typewriter manufacturers had no idea how to manufacture computers, let alone write software for them. Typists also needed to learn completely new skillsets to effectively do the same as before and utilize the new capabilities of PCs. In 1982, the German company Triumph-Adler (TA), a leading manufacturer of typewriters at the time, created a gap-solution to allow themselves and typists an easier transition between both worlds.
+
+The TA SE was a family of "highly intelligent text systems". As a modular system, the devices inthe series look very similar, sharing many of their components internal and external components and capabilities. While the most members of the SE family were manufactured as all-in-one typewriters, the SE 1040 series tried something new. Instead of housing the keyboard and the printing components in one chassis, TA separated both. The keyboard was housed within its own case that also contained a display capable of showing a row of 40 characters. All printing and paper handling related components were put inside a separate daisy wheel printer that could operate by itself.
+
+![alt text](https://github.com/DirkSonguer/keyboard-TA-SE-1040/blob/main/images/TA-SE-1040-illustration.jpg "TA SE 1041 Illustration")
+
+Both units connected via a parallel port, using standardized interfaces. This meant that some versions of the keyboard could also be used as a stand-alone teletypewriter, while the printer could also be used by a PC. The printer unit was also sold seprately as "[TRD 170](https://archive.org/details/de-bedienungsanleitung-triumph-adler-trd-170-s-typenraddrucker)" daisy wheel printer for office computers.
+
+The keyboard unit was controlled by a [8048/49 microcontroller](https://en.wikipedia.org/wiki/Intel_MCS-48) and featured 
+8kb of memory. It offered 10 memory slots, each capable of holding up to 730 characters, or about 10 lines of text. Other models featured 16kb and doubled the number of memory slots, as well as the option to use external storage. Typists could enter and edit text into the keyboard memory before sending it to print on the printer unit. Memory slots could also be used as templates and used in form letters.
+
+The SE 1040 came in four editions:
+* SE 1040: Keyboard without internal memory expansion & no external storage
+* SE 1040 MD: Keyboard with internal memory expansion & external microdisk drive 
+* SE 1041: Keyboard with internal memory expansion & external 5.25 floppy disk drive
+* SE 1042: Keyboard with internal memory expansion, external 5.25 floppy disk drive & teletext capabilities
+
+Triumph-Adler also sold a separate monitor, to which many of the SE devices could be connected. The [Adler Screentyper](https://etzone.org/wp-content/uploads/2020/07/4e598-adler-screen-typer.pdf) extended the 1040's display, organizing single rows into pages. The interface was fully controlled by the keyboard, giving users "*the benefit of genuine word processing with ease of operation of modern electronic typewriters.*"
+
+At this point it becomes clear that the TA SE series are computers - just very simple ones that run no real operating system, but a hardwired word processor, utilizing familar typewriter keys and metaphors. They allowed Triumph-Adler to slowly get a grip on producing PCs, which led to the TA Alphatronic brand of computer systems in the mid 1980s. Typists on the other hand could already enjoy the benefits of word processing without learning a new interface paradigm. THis made the SE system quite popular, hence the relatively cheap price for 1040 variants today.
+
+However, their PC line didn't turn out so well and in 1986, Triumph-Adler was acquired by Olivetti, a competitor of TA based in Italy. After the acquisition, production and development of TA products was largely halted, and several German manufacturing facilities were closed and sold off.
+
 More information on the TA SE 10xx series of typewriters:
-* https://etzone.org/2016/12/15/adler-se-series-electronic-typewriters/
-* https://www.wikiwand.com/de/Triumph-Adler#Elektronische_B%C3%BCroschreibmaschinen_mit_Kugelkopf (German)
 * https://deskthority.net/wiki/Triumph-Adler
+* https://etzone.org/2016/12/15/adler-se-series-electronic-typewriters/
+* https://www.provinz.bz.it/katalog-kulturgueter/de/suche.asp?kks_priref=150008265
 
 # Keyboard documentation
 
@@ -68,14 +83,14 @@ The two boards seem to be two different editions. While not different from the o
 * The first board is labelled "Assembly Group EDCA01" ("Baugruppe" in German)
 * The second board is labelled "Assembly Group EDCA03"
 
-I assume this denominates generations, however neither board shows any kind of manufacturing date reference.
+I assume this denominates generations, however neither board shows any kind of manufacturing date reference that I can see.
 
 ## Switches
 The switches are [Cherry M9](https://deskthority.net/wiki/Cherry_M9). According to the Cherry catalog, these are the low profile linear variant - the main housing sits below the steel plate, with the top part clipping into the plate.
 
-The switches in the first board are M9 blacks (see pictures). The board also has two M9 clear switches. Based on their slightly wonkier soldering my guess is that these were replacements / repairs at some point.
+The switches in the first board are M9 blacks (see pictures). The board also has two M9 switches with clear stems. Based on their slightly wonkier soldering my guess is that these were replacements / repairs at some point.
 
-The second board features only M9 clears, in line with the replacement switches from the first board. 
+The second board features only M9 switches with clear stems, in line with the replacement switches from the first board. 
 
 ![alt text](https://github.com/DirkSonguer/keyboard-TA-SE-1040/blob/main/images/TA-SE-1040-switches.jpg "TA SE 1040 Switches")
 
@@ -109,7 +124,9 @@ The original keyboard was connected to a daisy wheel printer unit that provided 
 
 This assumes that the keyboards are still working and that it's actually desirable to type on the original switches. Especially the last part is debatable as the M9 switches are quite... [horrible](https://www.youtube.com/watch?v=OgUFYYTNaes).
 
-In terms of restoring the keyboard, I recently got my hands on the original technical documentations for the SE 10-series as part of the estate of Gernot Haltenorth, a previous technical writer for Triumph Adler. So it would be theoretically possible to repair any issues with the boards, assuming you could still get the components (which you can't).
+In terms of restoring the keyboard, I recently got my hands on the original technical documentations for the SE 10-series as part of the estate of Gernot Haltenorth, a previous technical writer for Triumph-Adler. There are also other amazing people working on old TA SE keyboards (as the image below shows, which I got from a very helpful fellow). So it would be theoretically possible to repair any issues with the boards, assuming you could still get the components (which you can't).
+
+![alt text](https://github.com/DirkSonguer/keyboard-TA-SE-1040/blob/main/images/TA-SE-1040-breakout-box.jpg "TA SE 1040 Breakout Box Work")
 
 All that makes a true restoration possible, but (at least for me) impractical.
 
