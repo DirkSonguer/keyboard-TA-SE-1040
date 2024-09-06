@@ -1,6 +1,8 @@
 # Triumph-Adler SE 1040 Rebuild
 The Triumph-Adler (TA) SE 1040 was a typewriter setup from the early to late 1980s, consisting of an external keyboard and a daisy wheel printer plus optional internal and external storage. While the printer units are hard to come by in good shape these days, the keyboards turn up on Ebay from time to time and I managed to grab two for cheap. My initial idea was to only re-use the keycaps, which are thick, black, low-profile double-shot ABS with MX compatible mounts. But then the boards arrived and I really liked their look.
 
+![alt text](https://github.com/DirkSonguer/keyboard-TA-SE-1040/blob/main/images/TA-SE-1040-front.jpg "TA SE 1040 Front")
+
 I decided to try to restore or rebuild the keyboards in some way. This repo documents my findings in case others want to mod their TA SE 1040s.
 
 # What is this thing? And why does it exist?
@@ -134,14 +136,20 @@ All that makes a true restoration possible, but (at least for me) impractical.
 Reconstruction would start with removing the original PCB. Since everything is on that PCB this equates to removing the entire interior of the keyboard. Step two would be creating a new PCB with modern hot-swap cherry MX sockets, new display and some equivalent functionality for the comfort keys & LEDs.
 
 ## Layout
+The original layout of the SE 1040 is, well, weird. While the alphas are standard, everything around them is wrong (see above). Rebuilding the original layout in [KLE](http://www.keyboard-layout-editor.com/) results in something like this:
+
+![alt text](https://github.com/DirkSonguer/keyboard-TA-SE-1040/blob/main/original-layout/triumph-adler-se-1040.png "TA SE 1040 Original Layout")
+
+If we assume that we want to keep the original top case as-is, then we can normalize the modifiers into a regular 60% keyboard, and add an additional column of keys to the left. This however leaves a weird 0.5u gap to the left on the bottom row. Alternatively te PCB could support a 2.5u left shift that sticks out a bit. 
+
+![alt text](https://github.com/DirkSonguer/keyboard-TA-SE-1040/blob/main/new-layout/keyboard-layout.png "TA SE 1040 New Layout")
+
+Cutting a prototype plate with this (attached to the top case with tape) fits pretty well into the case. However, I wonder if it's practical to have a PCB with this layout. Instead it might be more practical to create four PCB modules: One for the comfort keys (also containing the LEDs), the main keyboard (standard PCB), the numpad (also normal numpad), and the display (LED display and driver).
 
 ## Display
+There are still [Vacuum Fluorescent Displays](https://en.wikipedia.org/wiki/Vacuum_fluorescent_display) (VFD) in production, as for example described in [this project](https://www.hackster.io/macsboost/particle-weather-vfd-80fa78). They are also [not that hard to program for](https://hackingmajenkoblog.wordpress.com/2017/12/23/vacuum-fluorescent-displays-on-arduino/). However looking through some Chinese part lists, I couldn't come up with one that really fits the case as-is. I could fit two smaller ones side-by-side, but then there would be a bezel in the middle.
 
-https://www.hackster.io/macsboost/particle-weather-vfd-80fa78
-
-https://www.youtube.com/watch?v=JM_Iqasw9K4
-
-https://hackingmajenkoblog.wordpress.com/2017/12/23/vacuum-fluorescent-displays-on-arduino/
+It might just be simpler to replace it with an LCD, or even one of those OLED strips. In that case I could use a regular graphics library and either emulate the old VFD-style, or even go full ham on design.
 
 ## Software used
 * KLE for creating the layout: http://www.keyboard-layout-editor.com/
