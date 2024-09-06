@@ -144,7 +144,7 @@ If we assume that we want to keep the original top case as-is, then we can norma
 
 ![alt text](https://github.com/DirkSonguer/keyboard-TA-SE-1040/blob/main/new-layout/keyboard-layout.png "TA SE 1040 New Layout")
 
-Cutting a [prototype plate](plate-2024-03-24T16_29_11.879Z.pdf) with this (attached to the top case with tape) fits pretty well into the case. However, I wonder if it's practical to have a PCB with this layout. Instead it might be more practical to create four PCB modules: One for the comfort keys (also containing the LEDs), the main keyboard (standard PCB), the numpad (also normal numpad), and the display (LED display and driver).
+Cutting a [prototype plate](https://github.com/DirkSonguer/keyboard-TA-SE-1040/blob/main/plate/plate-2024-03-24T16_29_11.879Z.pdf) with this (attached to the top case with tape) fits pretty well into the case. However, I wonder if it's practical to have a PCB with this layout. Instead it might be more practical to create four PCB modules: One for the comfort keys (also containing the LEDs), the main keyboard (standard PCB), the numpad (also normal numpad), and the display (LED display and driver).
 
 ## Display
 There are still [Vacuum Fluorescent Displays](https://en.wikipedia.org/wiki/Vacuum_fluorescent_display) (VFD) in production, as for example described in [this project](https://www.hackster.io/macsboost/particle-weather-vfd-80fa78). They are also [not that hard to program for](https://hackingmajenkoblog.wordpress.com/2017/12/23/vacuum-fluorescent-displays-on-arduino/). However looking through some Chinese part lists, I couldn't come up with one that really fits the case as-is. I could fit two smaller ones side-by-side, but then there would be a bezel in the middle.
