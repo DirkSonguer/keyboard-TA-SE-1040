@@ -140,7 +140,9 @@ The original layout of the SE 1040 is, well, weird. While the alphas are standar
 
 ![alt text](https://github.com/DirkSonguer/keyboard-TA-SE-1040/blob/main/original-layout/triumph-adler-se-1040.png "TA SE 1040 Original Layout")
 
-If we assume that we want to keep the original top case as-is, then we can normalize the modifiers into a regular 60% keyboard, and add an additional column of keys to the left. This however leaves a weird 0.5u gap to the left on the bottom row. Alternatively te PCB could support a 2.5u left shift that sticks out a bit. 
+If we assume that we want to keep the original top case as-is, then we can normalize the modifiers into a regular 60% keyboard, and add an additional column of keys to the left. This however leaves a weird 0.5u gap to the left on the bottom alpha row. Alternatively the PCB could support a 2.5u left shift that sticks out a bit.
+
+The bottom modifier row is 12u in total (8u spacebar plus four 1u keys). Assuming a standard 6.25u spacebar, that leaves 5.75u. For example three 1.25u and one 2u. A 7u spacebar doesn't maske this mess any easier. I have played around with some options below, but haven't found a setup that I am happy with.
 
 ![alt text](https://github.com/DirkSonguer/keyboard-TA-SE-1040/blob/main/new-layout/keyboard-layout.png "TA SE 1040 New Layout")
 
